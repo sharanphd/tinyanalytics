@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <section class="card">
+    <h2>Shared dashboard</h2>
+    <div class="muted">Share ID: <span class="mono">{{ share_id }}</span></div>
+    <div class="muted">Total page views: <strong>{{ total_pageviews }}</strong></div>
+  </section>
+
+  <section class="card">
+    {% include "partials/pages.html" %}
+  </section>
+{% endblock %}

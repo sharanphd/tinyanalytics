@@ -1,0 +1,134 @@
+1️⃣ “Review my ARCHITECTURE.md” (paste it)
+2️⃣ “Help me improve PROMPT_LIBRARY.md”
+3️⃣ “Give me Windsurf-specific prompts for this project”
+
+
+
+What you SHOULD train next (concrete tasks)
+🔵 Task 1: Finish ARCHITECTURE.md properly (core training)
+
+You already created the file.
+Now you train on architecture completeness.
+
+Your ARCHITECTURE.md must answer only these questions:
+
+What problem does TinyAnalytics solve?
+
+What data is stored?
+
+What data is explicitly NOT stored?
+
+Request flow (browser → backend → DB)
+
+Failure modes (DB down, rate limit, bad input)
+
+Deployment assumptions (single VM, Docker, no k8s)
+
+👉 This is real senior work.
+
+If you want, next message you can paste:
+
+ARCHITECTURE.md (current draft)
+
+
+I’ll review it line by line like an architect, not rewrite blindly.
+
+🔵 Task 2: PROMPT_LIBRARY.md becomes your “Aider replacement”
+
+Since Aider is gone, this file becomes very important.
+
+You already did something excellent here 👍
+Next training step is to add 5–7 more prompts, specifically:
+
+Add prompts for:
+
+Architecture review
+
+Security review
+
+Failure analysis
+
+CI pipeline review
+
+Production readiness checklist
+
+This trains you to:
+
+“Ask the right questions to AI”
+
+That’s the actual skill Praveen wants.
+
+🔵 Task 3: Windsurf workflow training (this replaces Aider)
+
+You said:
+
+“I want Windsurf to be my assistant”
+
+Perfect. Then your training is:
+
+Practice THIS loop (no coding yet):
+
+Open ARCHITECTURE.md in Windsurf
+
+Ask:
+
+“What assumptions are risky?”
+
+“What would break under load?”
+
+“What security risks exist?”
+
+This is design-level prompting, not code generation.
+7️⃣ What about the remaining modules (you asked this explicitly)
+
+You asked:
+
+“Should I give you remaining modules or what am I training now?”
+
+Answer:
+
+❌ Do NOT dump more modules now
+✅ We already have enough direction until Lesson 17
+
+Your current active lessons are:
+
+Lesson 11 – Prompt Library ✅
+
+Lesson 12 – Architecture ✅
+
+Lesson 13 – Rules (conceptual only) ✅
+
+Lesson 14 – Context mgmt (you are doing this naturally)
+
+Lesson 15 – Prompt arsenal (in progress)
+
+That’s plenty.
+
+8️⃣ When will you return to “real coding”?
+
+Only when ALL of these are true:
+
+ARCHITECTURE.md reviewed & solid
+
+PROMPT_LIBRARY.md mature
+
+You can explain TinyAnalytics verbally without notes
+
+You feel “I know what I’m building”
+
+Then:
+👉 You move to Lesson 17 (Bootstrap)
+👉 With Windsurf + Gemini + me
+👉 Without Aider
+
+That is 100% valid.
+
+
+
+PROMPT_LIBRARY.md related goals:
+1. Git (diagnosis & recovery)
+
+2. Debugging (systematic approach)
+
+3. Jenkins (pipeline reasoning, not YAML spam)
+

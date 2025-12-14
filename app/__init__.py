@@ -1,0 +1,1 @@
+"""TinyAnalytics application package."""

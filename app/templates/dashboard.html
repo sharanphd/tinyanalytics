@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <section class="card">
+    <div class="row">
+      <div>
+        <h2>Dashboard</h2>
+        <div class="muted">Total page views: <strong>{{ total_pageviews }}</strong></div>
+      </div>
+
+      <div class="row-right">
+        <button
+          class="btn"
+          hx-get="/partials/pages"
+          hx-target="#pages"
+          hx-swap="innerHTML"
+        >
+          Refresh
+        </button>
+
+        <button
+          class="btn"
+          hx-post="/share"
+          hx-trigger="click"
+          hx-swap="none"
+          hx-on::after-request="if (event.detail.successful) { const r = JSON.parse(event.detail.xhr.responseText); window.prompt('Share URL', window.location.origin + r.url); }"
+        >
+          Create share link
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="card" id="pages">
+    {% include "partials/pages.html" %}
+  </section>
+
+  <section class="card">
+    <h3>Tracking snippet (example)</h3>
+    <pre><code>&lt;script&gt;
+fetch("https://YOUR-ANALYTICS-HOST/track", {
+  method: "POST",
+  headers: {"Content-Type": "application/json"},
+  body: JSON.stringify({ url: window.location.href })
+});
+&lt;/script&gt;</code></pre>
+    <div class="muted">No cookies, no local storage. IP is hashed server-side.</div>
+  </section>
+{% endblock %}

@@ -1,0 +1,22 @@
+<h3>Pages</h3>
+
+{% if pages|length == 0 %}
+  <div class="muted">No data yet. Send a tracking request to start collecting page views.</div>
+{% else %}
+  <table class="table">
+    <thead>
+      <tr>
+        <th>URL</th>
+        <th class="right">Views</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for p in pages %}
+      <tr>
+        <td class="mono">{{ p.url }}</td>
+        <td class="right">{{ p.total_views }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endif %}
