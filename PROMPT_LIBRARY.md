@@ -318,3 +318,29 @@ Answer:
 
 ### Expected output
 - A concise risk assessment with concrete mitigations.
+
+
+
+
+
+
+
+## What TinyAnalytics taught me as an engineer
+
+1. Architecture comes before code; without it, scaling is guesswork.
+2. Docker is not magic—it is disciplined packaging of runtime, dependencies, and ports.
+3. Running services in the background (detached containers) is normal in real systems.
+4. CI/CD exists to reduce human error, not to show tool knowledge.
+5. Rate limiting protects infrastructure, not just endpoints.
+6. Background jobs exist to keep databases healthy over time.
+7. Public links must be read-only, revocable, and unguessable.
+8. Security is about defaults: deny first, then allow.
+9. Hotfixes must be small, fast, and well-documented.
+10. AI accelerates scaffolding, but human judgment ensures correctness.
+11. Reading and tracing code is more important than writing new code.
+
+
+
+
+
+
